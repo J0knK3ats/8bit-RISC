@@ -1,0 +1,113 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 344 272 578 288)
+	(text "INPUT" (rect 15 6 43 16)(font "Arial" (font_size 6)))
+	(text "data[LPM_WIDTH-1..0]" (rect 114 4 228 16)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 84 4)(pt 59 4))
+		(line (pt 84 12)(pt 59 12))
+		(line (pt 55 8)(pt 0 8))
+		(line (pt 84 4)(pt 84 12))
+		(line (pt 59 12)(pt 55 8))
+		(line (pt 59 4)(pt 55 8))
+	)
+	(rotate180)
+	(text "VCC" (rect 20 -1 40 9)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 280 80 296 248)
+	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
+	(text "enabledt" (rect 4 5 16 46)(font "Arial" )(vertical))
+	(pt 8 168)
+	(drawing
+		(line (pt 4 84)(pt 4 109))
+		(line (pt 12 84)(pt 12 109))
+		(line (pt 8 113)(pt 8 168))
+		(line (pt 4 84)(pt 12 84))
+		(line (pt 12 109)(pt 8 113))
+		(line (pt 4 109)(pt 8 113))
+	)
+	(rotate270)
+	(text "VCC" (rect -1 128 9 148)(font "Arial" (font_size 6))(vertical))
+)
+(pin
+	(bidir)
+	(rect -16 272 200 288)
+	(text "BIDIR" (rect 191 6 215 16)(font "Arial" (font_size 6)))
+	(text "tridata[LPM_WIDTH-1..0]" (rect 5 4 128 16)(font "Arial" ))
+	(pt 216 8)
+	(drawing
+		(line (pt 160 12)(pt 138 12))
+		(line (pt 216 8)(pt 164 8))
+		(line (pt 160 4)(pt 138 4))
+		(line (pt 138 12)(pt 134 8))
+		(line (pt 138 4)(pt 134 8))
+		(line (pt 160 12)(pt 164 8))
+		(line (pt 164 8)(pt 160 4))
+	)
+	(rotate180)
+	(text "VCC" (rect 192 -1 212 9)(font "Arial" (font_size 6)))
+)
+(symbol
+	(rect 200 248 344 304)
+	(text "LPM_BUSTRI" (rect 4 0 98 16)(font "Arial" (font_size 10)))
+	(text "inst1" (rect 0 32 22 49)(font "Intel Clear" ))
+	(port
+		(pt 144 32)
+		(input)
+		(text "data[LPM_WIDTH-1..0]" (rect 111 19 237 33)(font "Arial" (font_size 8)))
+		(text "data[]" (rect 111 19 142 33)(font "Arial" (font_size 8)))
+		(line (pt 104 32)(pt 144 32)(line_width 3))
+	)
+	(port
+		(pt 88 0)
+		(input)
+		(text "enabledt" (rect 90 1 138 15)(font "Arial" (font_size 8)))
+		(text "enabledt" (rect 90 1 138 15)(font "Arial" (font_size 8)))
+		(line (pt 88 24)(pt 88 0))
+	)
+	(port
+		(pt 0 32)
+		(bidir)
+		(text "tridata[LPM_WIDTH-1..0]" (rect 6 51 142 65)(font "Arial" (font_size 8)))
+		(text "tridata[]" (rect 0 -16 42 -2)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 64 32)(line_width 3))
+	)
+	(parameter
+		"LPM_WIDTH"
+		"8"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(line (pt 64 32)(pt 72 32)(line_width 3))
+		(line (pt 104 48)(pt 104 16))
+		(line (pt 72 32)(pt 104 48))
+		(line (pt 104 16)(pt 72 32))
+	)
+	(annotation_block (parameter)(rect 344 208 476 246))
+)

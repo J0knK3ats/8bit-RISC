@@ -1,0 +1,88 @@
+-- Copyright (C) 2019  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=24;
+DEPTH=64;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	00  :   018108;
+	01  :   00ED82;
+	02  :   00C050;
+	03  :   00E004;
+	04  :   00B005;
+	05  :   01A206;
+	06  :   959A01;
+	07  :   00E00F;
+	08  :   00ED8A;
+	09  :   00ED8C;
+	0A  :   00A008;
+	0B  :   008001;
+	[0C..0D]  :   062009;
+	0E  :   070A08;
+	0F  :   038201;
+	10  :   001001;
+	11  :   00ED83;
+	12  :   00ED87;
+	13  :   00ED99;
+	14  :   00ED9C;
+	15  :   31821D;
+	16  :   31821F;
+	17  :   318221;
+	18  :   318223;
+	19  :   00E01A;
+	1A  :   00A01B;
+	1B  :   070A01;
+	1C  :   00D181;
+	1D  :   21881E;
+	1E  :   019801;
+	1F  :   298820;
+	20  :   019801;
+	21  :   118822;
+	22  :   019801;
+	23  :   198824;
+	24  :   019801;
+	25  :   018110;
+	26  :   000002;
+	27  :   000003;
+	28  :   000004;
+	29  :   000005;
+	2A  :   000006;
+	2B  :   000007;
+	2C  :   000008;
+	2D  :   000009;
+	2E  :   00000A;
+	2F  :   00000B;
+	30  :   00000C;
+	31  :   00000D;
+	32  :   00000E;
+	33  :   00000F;
+	34  :   000010;
+	35  :   000011;
+	36  :   000012;
+	37  :   000013;
+	38  :   000014;
+	39  :   000015;
+	3A  :   000016;
+	3B  :   000017;
+	3C  :   000018;
+	3D  :   000019;
+	3E  :   00001A;
+	3F  :   00001C;
+END;

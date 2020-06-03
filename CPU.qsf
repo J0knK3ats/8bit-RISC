@@ -1,0 +1,73 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2019  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+# Date created = 15:42:02  June 01, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		CPU_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE auto
+set_global_assignment -name TOP_LEVEL_ENTITY CPU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 19.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:42:02  JUNE 01, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "19.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name QIP_FILE decoder.qip
+set_global_assignment -name BDF_FILE CPU.bdf
+set_global_assignment -name BDF_FILE latch.bdf
+set_global_assignment -name BDF_FILE latch0.bdf
+set_global_assignment -name BDF_FILE counter1.bdf
+set_global_assignment -name QIP_FILE de.qip
+set_global_assignment -name QIP_FILE counter.qip
+set_global_assignment -name BDF_FILE bustri.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE ul_C.bdf
+set_global_assignment -name BDF_FILE LDR0_2.bdf
+set_global_assignment -name BDF_FILE uA_reg.bdf
+set_global_assignment -name BDF_FILE reg0_2.bdf
+set_global_assignment -name QIP_FILE DECODER_A.qip
+set_global_assignment -name QIP_FILE DECODER_B.qip
+set_global_assignment -name QIP_FILE DECODER_C.qip
+set_global_assignment -name BDF_FILE STEP.bdf
+set_global_assignment -name BSF_FILE ../../quartus/libraries/megafunctions/lpm_latch0.bsf
+set_global_assignment -name BSF_FILE ../../quartus/libraries/megafunctions/lpm_latch1.bsf
+set_global_assignment -name BDF_FILE Latc.bdf
+set_global_assignment -name BDF_FILE Latc0.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE cpu.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
